@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark theme colors -->
+
+
+    <!-- Base application theme for dark mode -->
+    <style name="Base.Theme.CurrencyConvertor" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark_primary</item>
+        <item name="colorPrimaryVariant">@color/dark_primary_variant</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/dark_accent</item>
+        <item name="colorSecondaryVariant">@color/dark_accent</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/black</item>
+        <!-- Background colors - setting to pure black -->
+        <item name="android:windowBackground">@color/dark_background</item>
+        <item name="android:colorBackground">@color/dark_background</item>
+        <!-- Material Components attribute for background -->
+        <item name="backgroundColor">@color/dark_background</item>
+        <!-- Card colors -->
+        <item name="cardBackgroundColor">@color/dark_surface</item>
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/dark_text_primary</item>
+        <item name="android:textColorSecondary">@color/dark_text_secondary</item>
+        <!-- Button styles -->
+        <item name="materialButtonStyle">@style/Widget.CurrencyConvertor.Button.Dark</item>
+        <!-- Text input styles -->
+        <item name="textInputStyle">@style/Widget.CurrencyConvertor.TextInputLayout.Dark</item>
+        <!-- Ensure dialogs also have dark backgrounds -->
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.App.MaterialAlertDialog</item>
+    </style>
+
+    <!-- Dark Button style -->
+    <style name="Widget.CurrencyConvertor.Button.Dark" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/black</item>
+        <item name="backgroundTint">@color/dark_primary</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <!-- Dark TextInput style -->
+    <style name="Widget.CurrencyConvertor.TextInputLayout.Dark" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/dark_primary</item>
+        <item name="hintTextColor">@color/dark_primary</item>
+    </style>
+
+    <!-- Alert Dialog Theme -->
+    <style name="ThemeOverlay.App.MaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="dialogCornerRadius">8dp</item>
+        <item name="colorSurface">@color/dark_surface</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/MaterialAlertDialog.App.Title.Text</item>
+    </style>
+
+    <!-- Alert Dialog Title Text Style -->
+    <style name="MaterialAlertDialog.App.Title.Text" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/dark_text_primary</item>
+    </style>
+</resources>
